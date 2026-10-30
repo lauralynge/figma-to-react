@@ -1,10 +1,17 @@
-import { Inter } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 
-// The font from the Figma file. Use another font from next/font/google if your design uses one.
-const inter = Inter({
-  variable: "--font-inter",
+// The fonts from the Figma file: Font-family/Primary and Font-family/Secondary.
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"]
+});
+
+// Poppins is not a variable font, so it needs a weight.
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: "400"
 });
 
 export const metadata = {
@@ -14,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="da" className={inter.variable}>
+    <html lang="da" className={`${montserrat.variable} ${poppins.variable}`}>
       <body>{children}</body>
     </html>
   );

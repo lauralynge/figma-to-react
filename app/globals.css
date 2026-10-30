@@ -8,16 +8,41 @@
  * - Font weights become numbers: Regular -> 400, Medium -> 500, Semi Bold -> 600
  */
 :root {
-  /* Color */
+  /* Color / neutral */
+  --color-neutral-background: #fafafa;
+  --color-neutral-text: #1e2348;
+  --color-neutral-secondary-bg: #f9efdd;
 
-  /* Typography – the font itself is loaded in app/layout.js */
-  --font-family-primary: var(--font-inter), sans-serif;
+  /* Color / accent */
+  --color-accent-primary-1: #ff791c;
+  --color-accent-primary-2: #ffd29b;
+  --color-accent-secondary-1: #372a6f;
+  --color-accent-secondary-2: #c1a3ef;
+
+  /* Color / accent / btn */
+  --color-accent-btn-primary: #1e2348;
+  --color-accent-btn-secondary: #b7f7fb;
+
+  /* Typography – the fonts themselves are loaded in app/layout.js */
+  --font-family-primary: var(--font-montserrat), system-ui, sans-serif;
+  --font-family-secondary: var(--font-poppins), system-ui, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
 
   /* Spacing: gaps and paddings */
+  --gaps-small: 8px;
+  --paddings-x-small: 16px;
+  --paddings-small: 24px;
+  --paddings-large: 32px;
 
   /* Sizes */
+  --btn-height-small: 32px;
 
   /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 16px;
+  --border-radius-l: 24px;
 }
 
 * {
